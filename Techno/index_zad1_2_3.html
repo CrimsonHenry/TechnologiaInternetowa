@@ -1,0 +1,279 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <title>Technologie Internetowe - cw 1</title>
+  </head>
+  <body>
+    
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"><img src="img/logo.png" alt="Menu" height=150px width=250px ></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#carouselExampleSlidesOnly">Karuzela</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#kolumny">Kolumny</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#omnie">O mnie</a>
+            </li>
+            <li  class="nav-item">
+              <a class="nav-link " href="#zadjs1">Zadanie JavaScript 1</a>
+              
+              
+              
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#zadjs2">Zadanie JavaScript 2</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#zadjs3">Zadanie JavaScript 3</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#kontakt">Kontakt</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel" >
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="img/karusel_1.jpg" class="d-block w-100" alt="..." height="600px">
+        </div>
+        <div class="carousel-item">
+          <img src="img/karusel_2.jpg" class="d-block w-100" alt="..." height="600px">
+        </div>
+        <div class="carousel-item">
+          <img src="img/karusel_3.jpg" class="d-block w-100" alt="..." height="600px">
+        </div>
+      </div>
+    </div>
+    <hr class="featurette-divider">
+    <div id="kolumny" class="container">
+      <div class="row">
+        <div class="col">
+          
+          <div class="card" style="width: 18rem;">
+            <img src="img/col_1.jpg" class="card-img-top" alt="..." height="150px">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+
+        </div>
+        <div class="col">
+          
+          <div class="card" style="width: 18rem;">
+            <img src="img/col_2.jpg" class="card-img-top" alt="..." height="150px">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+
+        </div>
+        <div class="col">
+          
+          <div class="card" style="width: 18rem;">
+            <img src="img/col_3.jpg" class="card-img-top" alt="..." height="150px">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <hr class="featurette-divider">
+
+    <div id="omnie" class="container">
+      <div class="row">
+        <div class="col-4">
+          <h2 class="featurette-heading">O mnie</h2>
+        </div>
+        <div class="col-7">
+          <h2 class="featurette-heading">Warchuliński Marek</h2>
+        <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur. Quis aute iure reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint obcaecat cupiditat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
+        
+      </div>
+    </div>
+
+    <hr class="featurette-divider">
+
+    <div id="javascript" class="container">
+      <div class="row">
+        <div class="col-4">
+          <p id="zadjs1"><strong>Zadanie JavaScript 1</strong></p>
+          <p id="split"></p>
+          <script>
+            let text = "Tworzenie stron internetowych";
+            const myArray = text.split(" ");
+            
+            let disPlay="";
+            for (let i = 0;  i<myArray.length; i++){
+      
+              switch (i) {
+                  case 0 :
+                  
+                       
+                      disPlay += '<span style = "color: #2c286d;font-size:32px;text-transform :uppercase">'+ myArray[i]+'</span> ' ;
+                      break;
+           
+                      case 1 :
+                      disPlay += '<span style = "color: #2c286d;font-size:32px;text-transform :uppercase">'+ myArray[i]+'</span> ' ;
+                      break;
+              
+                      default:
+                      disPlay += '<p style = "color: #a92b3f;text-decoration: underline;font-weight: bold;text-transform :uppercase;font-size:32px">'+ myArray[i]+'</p> ' ;
+                      break;
+                      
+              }
+            }
+            document.getElementById("split").innerHTML = disPlay;
+          </script>
+        </div>
+
+        <div class="col-7">
+          
+          <script>
+            function kwadrat (){
+              let x1, x2, wynik;
+
+              let a = document.getElementById("_a").value;
+              let b = document.getElementById("_b").value;
+              let c = document.getElementById("_c").value;
+                          
+              let delta = b * b - 4 * a * c;
+                          
+              if (delta > 0) {
+                  x1 = (-b + Math.sqrt(delta)) / (2 * a);
+                  x2 = (-b - Math.sqrt(delta)) / (2 * a);
+              
+                  wynik = "Delta = "+ Math.sqrt(delta) + "<br/> x1 ="+ x1 + ", x2 =" + x2;
+              }
+              
+              
+              else if (delta == 0) {
+                  x1 = x2 = -b / (2 * a);
+              
+                  wynik="Delta równa zero. Wynik obliczenia to = " + x1 ;
+              }
+              document.getElementById("wynik").innerHTML = wynik;
+          }
+          
+          </script>
+
+          <p id="zadjs2"><strong>Zadanie JavaScript 2</strong></p>
+          <form name="input_form" action="javascript:kwadrat();">
+            <div class="input-group mb-3">
+              <span class="input-group-text">A</span>
+              <input type="text" id="_a" class="form-control" placeholder="wprowadź wartość a" /><br/>
+          </div>
+          <div class="input-group mb-3">
+              <span class="input-group-text">B</span>
+              <input type="text" id="_b" class="form-control" placeholder="wprowadź wartość b" /><br/>
+          </div>
+          <div class="input-group mb-3">
+              <span class="input-group-text">C</span>
+              <input type="text" id="_c" class="form-control" placeholder="wprowadź wartość c" /><br/><br/>
+          </div>
+          <button type="submit" class="btn btn-danger">Oblicz równanie kwadratowe</button>
+        </form>
+        <br/>
+          <p><strong>Wynik równania</strong></p>
+          <p id="wynik"></p>
+        </div>
+
+        <div class="col-7">
+          <p id="zadjs3"><strong>Zadanie JavaScript 3</strong></p>
+        </div>
+          
+          <script>
+            function kolorowanki() {
+              var randomColorbg = Math.floor(Math.random()*16777215).toString(16);
+              var randomColortx = Math.floor(Math.random()*16777215).toString(16);
+              
+              document.getElementById('omnie').style.backgroundColor="#"+randomColorbg;
+              document.getElementById('omnie').style.color = "#"+randomColortx;
+              
+            }
+        </script>   
+        
+
+        <div class="col-7">
+          <button type="button" class="btn btn-warning" onclick="kolorowanki()">Pokoloruj</button>
+        </div>
+      </div>
+    </div>
+
+    <hr class="featurette-divider">
+    <div id="kontakt" class="container">
+      <div class="row">
+        <div class="col-4">
+          <h2 class="featurette-heading">Kontakt</h2>
+          <h4 class="featurette-heading">E-mail: <a href="mailto:adres@adres.pl">adres@adres.pl</a></h4>
+          <h4 class="featurette-heading">Telefon: <a href="callto:+48111222333">+48 111 222 333</a></h4>
+        </div>
+        
+        </div>
+        
+      </div>
+    </div>
+    <hr class="featurette-divider">
+    
+    <div class="container">
+      <footer class="py-3 my-4">
+        <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+          <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Home</a></li>
+          <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Features</a></li>
+          <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Pricing</a></li>
+          <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">FAQs</a></li>
+          <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">About</a></li>
+        </ul>
+        <p class="text-center text-muted">© 2022 Marek W., Inc</p>
+        
+      </footer>
+    </div>
+
+    <div id="current_date" class="container" >
+      <script>
+      document.getElementById("current_date").innerHTML = Date();
+      </script>
+    </div>
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>
